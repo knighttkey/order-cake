@@ -67,8 +67,13 @@ const AddPanel = (props) => {
               );
             })}
           </div>
+
         </div>
         <div className="panel_image_picker">
+                  <div className="price_area">
+              <div className="item_price">$2</div>
+              <div className="item_count">商品數量:12</div>
+          </div>
           <div className="model_picker_tip">口味</div>
           <div className="picker_row">
             {layerCakeData.map((item, index) => {
