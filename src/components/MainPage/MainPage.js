@@ -11,6 +11,7 @@ import ChickenLeg from "./../../images/chicken_leg.jpg";
 import Egg from "./../../images/egg.jpg";
 import ModalTool from "./../ModalTool/ModalTool";
 import AddPanel from "./../AddPanel/AddPanel";
+import ShopImage from "./../../images/calicoshop.png";
 const MainPage = () => {
   const layerCakeData = [
     {
@@ -168,7 +169,7 @@ const MainPage = () => {
       <div className="shop_info">
         <div className="top">
           <div className="shop_basic">
-            <div className="shop_avatar"></div>
+            <img className="shop_avatar" src={ShopImage}></img>
             <div className="shop_content">
               <div className="shop_name">revyShopping</div>
               <div className="shop_location">台北市 文山區 / 萬華區</div>

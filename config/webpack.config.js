@@ -372,7 +372,7 @@ module.exports = function (webpackEnv) {
               parser: {
                 dataUrlCondition: {
                   // maxSize: imageInlineSizeLimit,
-                  maxSize:32*1024
+                  maxSize:128*1024
                 },
               },
             },
@@ -637,7 +637,7 @@ module.exports = function (webpackEnv) {
       //   can be used to reconstruct the HTML if necessary
       new WebpackManifestPlugin({
         fileName: 'asset-manifest.json',
-        publicPath: paths.publicUrlOrPath,
+        publicPath: isEnvProduction ?　'./': paths.publicUrlOrPath,
         // publicPath: './',
         generate: (seed, files, entrypoints) => {
           const manifestFiles = files.reduce((manifest, file) => {
