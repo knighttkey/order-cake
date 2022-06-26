@@ -1,4 +1,4 @@
-import React, { useState, useEffect, Fragment } from "react";
+import React, { useState, useEffect, Fragment, useRef } from "react";
 import "./MainPage.scss";
 import * as R from "ramda";
 import OriginCake from "./../../images/original.jpg";
@@ -67,7 +67,7 @@ const MainPage = () => {
   ];
   const [selected, setSelected] = useState([]);
   const [showPanel, setShowPanel] = useState(false);
-
+  const cardListRef = useRef();
   const pickThisImage = (imageIndex) => {
     let imageBar = document.querySelector(".image_bar");
     imageBar.style.transform = `translateX(-${imageIndex * 100}%)`;
@@ -187,7 +187,7 @@ const MainPage = () => {
       </div>
       <div className="recommendation">
         <div className="recom_tip">推薦賣場其他好物</div>
-        <div className="product_wrap">
+        <div className="product_wrap" ref={cardListRef}>
           {relatedProduct.map((item, index) => {
             return (
               <div className="product_card" key={index}>
