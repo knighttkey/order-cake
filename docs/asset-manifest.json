@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.61aaa663.css",
+    "main.js": "/static/js/main.814d225a.js",
+    "static/js/787.ca667f47.chunk.js": "/static/js/787.ca667f47.chunk.js",
+    "static/media/original.jpg": "/static/media/original.20dfe9c6389b66d11246.jpg",
+    "static/media/pandan.jpg": "/static/media/pandan.ca8c0f2ecaae89a171dd.jpg",
+    "static/media/taro.jpg": "/static/media/taro.7ef74a1ed777dcf46ace.jpg",
+    "static/media/egg.jpg": "/static/media/egg.3f36b188c2ef0d51fa61.jpg",
+    "static/media/chicken_leg.jpg": "/static/media/chicken_leg.fc0d22f9f576a9219fde.jpg",
+    "static/media/chili_sauce.jpg": "/static/media/chili_sauce.3995bd45a9f4d979f512.jpg",
+    "static/media/chicken_breast.jpg": "/static/media/chicken_breast.5ef5b139ac955b5dcc7f.jpg",
+    "static/media/calicoshop.jpg": "/static/media/calicoshop.8b4bb03b4d2709da432f.jpg",
+    "static/media/chicken_jerky.jpg": "/static/media/chicken_jerky.065496ffd0319765e193.jpg",
+    "index.html": "/index.html",
+    "main.61aaa663.css.map": "/static/css/main.61aaa663.css.map",
+    "main.814d225a.js.map": "/static/js/main.814d225a.js.map",
+    "787.ca667f47.chunk.js.map": "/static/js/787.ca667f47.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.61aaa663.css",
+    "static/js/main.814d225a.js"
+  ]
+}
