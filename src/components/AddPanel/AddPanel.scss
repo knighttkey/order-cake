@@ -15,8 +15,8 @@
       background-size: 100%;
       opacity: 0.3;
       position: absolute;
-      right: 5px;
-      top: 5px;
+      right: 15px;
+      top: 15px;
     }
 
     .main_image_area {
@@ -27,6 +27,8 @@
       flex-direction: column;
       overflow: hidden;
       position: relative;
+      box-sizing: border-box;
+      padding: 10px 10px 0 10px;
       .panel_image_bar {
         display: flex;
         transition: 0.3s;
