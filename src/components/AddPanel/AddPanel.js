@@ -78,11 +78,12 @@ const AddPanel = (props) => {
                     targetItem && targetItem.name === item.name ? "current" : ""
                   }`}
                   key={index}
+                  onClick={() => pickThisModel(index, item)}
                 >
                   <img
                     className={`each_thumbnail`}
                     src={item.image}
-                    onClick={() => pickThisModel(index, item)}
+                    
                   ></img>
                   <div className="item_name">{item.name}</div>
                 </div>
