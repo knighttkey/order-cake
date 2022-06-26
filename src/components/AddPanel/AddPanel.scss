@@ -1,0 +1,176 @@
+.add_panel_container {
+  width: 100%;
+  height: 100%;
+  .add_panel {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    box-sizing: border-box;
+    padding: 10px;
+    .close_icon {
+      width: 16px;
+      height: 26px;
+      background-image: url("./../../images/times.svg");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      opacity: 0.3;
+      position: absolute;
+      right: 5px;
+      top: 5px;
+    }
+
+    .main_image_area {
+      width: 200px;
+      aspect-ratio: 4 / 3;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      position: relative;
+      .panel_image_bar {
+        display: flex;
+        transition: 0.3s;
+        .each_image {
+          width: 200px;
+          aspect-ratio: 4 / 3;
+          height: auto;
+          //   object-fit: cover;
+          transition: 0.3s;
+        }
+      }
+    }
+    .panel_image_picker {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+      padding: 10px 10px;
+      background-color: #fff;
+      border-bottom: 1px solid #dadada;
+      .model_picker_tip {
+        font-size: 13px;
+        font-weight: 600;
+        color: #888888;
+        margin-bottom: 5px;
+      }
+      .picker_row {
+        display: flex;
+        .each_item {
+          height: 35px;
+          //   width: 0px;
+          display: flex;
+          background-color: #eeecec;
+          border-radius: 3px;
+          align-items: center;
+          box-sizing: border-box;
+          padding: 5px;
+          margin-right: 10px;
+          &.current {
+            border: 1px solid #4e944f;
+          }
+          .each_thumbnail {
+            width: 30px;
+            height: 30px;
+            object-fit: cover;
+            margin: 0 5px;
+            cursor: pointer;
+            &:first-child {
+              margin: 0 5px 0 0;
+            }
+          }
+          .item_name {
+            font-size: 13px;
+            font-weight: 600;
+            color: #888888;
+          }
+        }
+      }
+    }
+    .count_area {
+      box-sizing: border-box;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      .count_tip {
+        font-size: 13px;
+        font-weight: 600;
+        color: #888888;
+      }
+      .counter_wrap {
+        display: flex;
+        .minus {
+          width: 16px;
+          height: 16px;
+          border: 1px solid #4e944f;
+          border-right: none;
+          //   border-radius: 3px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          line-height: 16px;
+          transition: 0.3s;
+          &:hover {
+            background-color: #83bd75;
+            color: #fff;
+          }
+          //   &:active {
+          //     background-color: #83bd75;
+          //     color: #fff;
+          //   }
+        }
+        .count_number {
+          width: 40px;
+          height: 16px;
+          display: flex;
+          justify-content: center;
+          line-height: 16px;
+          font-size: 13px;
+          border: 1px solid #83bd75;
+        }
+        .add {
+          width: 16px;
+          height: 16px;
+          border: 1px solid #83bd75;
+          border-left: none;
+          //   border-radius: 3px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          line-height: 16px;
+          transition: 0.3s;
+          &:hover {
+            background-color: #83bd75;
+            color: #fff;
+          }
+          //   &:active {
+          //     background-color: #83bd75;
+          //     color: #fff;
+          //   }
+        }
+      }
+    }
+    .bottom_area {
+      box-sizing: border-box;
+      padding: 5px 10px 10px 10px;
+      width: 100%;
+      .add_to_cart_btn {
+        width: 100%;
+        height: 30px;
+        border-radius: 5px;
+        background-color: #4e944f;
+        color: #fff;
+        line-height: 30px;
+        display: flex;
+        justify-content: center;
+        // &:hover {
+        //   background-color: #4e944f;
+        //   color: #fff;
+        // }
+        // &:active {
+        //   background-color: #4e944f;
+        //   color: #fff;
+        // }
+      }
+    }
+  }
+}
